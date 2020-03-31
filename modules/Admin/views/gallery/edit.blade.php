@@ -16,7 +16,7 @@
                               <div class="row">  
 
                                 {!! Form::model($gallery, ['method' => 'PATCH', 'route' => ['gallery.update', $gallery->id],'class'=>'form-horizontal','id'=>'users_form','files' => true]) !!}
-                                    @include('packages::gallery.form', compact('page'))
+                                    @include('packages::gallery.form', compact('gallery'))
                                 {!! Form::close() !!}
                               </div>
                           </div>

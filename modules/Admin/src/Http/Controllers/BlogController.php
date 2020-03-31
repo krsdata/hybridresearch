@@ -127,7 +127,7 @@ class BlogController extends Controller {
         $page_title = 'Blog';
         $page_action = 'Edit Blog'; 
          
-         return view('packages::blog.edit', compact( 'blog','banner' ,'page_title', 'page_action'));
+         return view('packages::blog.edit', compact( 'blog','page_title', 'page_action'));
     }
 
     public function update(BlogRequest $request, Blogs $blog) 

@@ -1,3 +1,8 @@
+<style>
+.page-content {
+ margin-top : 110px !important;
+}
+</style>
  
 <!-- News-->
 <!-- News-->

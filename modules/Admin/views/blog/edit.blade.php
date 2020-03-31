@@ -16,7 +16,7 @@
                               <div class="row">  
 
                                 {!! Form::model($blog, ['method' => 'PATCH', 'route' => ['blog.update', $blog->id],'class'=>'form-horizontal','id'=>'users_form','files' => true]) !!}
-                                    @include('packages::blog.form', compact('page'))
+                                    @include('packages::blog.form', compact('blog'))
                                 {!! Form::close() !!}
                               </div>
                           </div>

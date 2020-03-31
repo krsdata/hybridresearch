@@ -128,7 +128,7 @@ class TrackSheetController extends Controller {
         $page_title = 'Track Sheet';
         $page_action = 'Edit Track Sheet'; 
          
-         return view('packages::trackSheet.edit', compact( 'trackSheet','banner' ,'page_title', 'page_action'));
+         return view('packages::trackSheet.edit', compact( 'trackSheet' ,'page_title', 'page_action'));
     }
 
     public function update(Request $request, TrackSheet $trackSheet) 

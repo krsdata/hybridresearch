@@ -88,7 +88,7 @@ class KycController extends Controller {
            $pdf = PDF::loadView('packages::kyc.riskpdf', compact('page_title', 'data','page_action','riskProfile','score_point'));
            return ($pdf->download(str_replace(" ", "_", $riskProfile->full_name).'_riskprofile.pdf'));
         }
-        return view('packages::kyc.riskTolrance', compact('kyc','data', 'page_title', 'page_action','riskProfile'));
+        return view('packages::kyc.riskTolrance', compact('page_title', 'page_action','riskProfile'));
     }
    
     /*
